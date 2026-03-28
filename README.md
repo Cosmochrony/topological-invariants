@@ -18,8 +18,6 @@ and what physical consequences do they impose?**
 
 The present work answers that question.
 
----
-
 # Core Result
 
 The paper establishes three unified structural results:
@@ -37,8 +35,6 @@ These are not independent phenomena, but consequences of a single principle:
 
 > admissibility under non-injective projection determines both
 > the available topological invariants and their orientation.
-
----
 
 # Main Structural Results
 
@@ -100,8 +96,6 @@ This defines **projective chirality**, which:
 - selects one orientation of winding invariants
 - provides a mechanism for the observed V−A asymmetry
 
----
-
 # Topological vs Standard Framework
 
 The paper establishes a sharp contrast with the standard paradigm:
@@ -115,8 +109,6 @@ The paper establishes a sharp contrast with the standard paradigm:
     - their absence follows from admissibility constraints
 
 This inversion is central to the result.
-
----
 
 # Observable Hierarchy
 
@@ -137,8 +129,6 @@ These layers are complementary:
 - dynamics defines how it evolves
 - spectral structure defines how it is organised
 
----
-
 # Status of the Results
 
 What is rigorously established:
@@ -155,8 +145,6 @@ What remains open:
 
 This distinction is explicit throughout the paper.
 
----
-
 # Why This Paper Matters
 
 This work is a **structural clarification** of fundamental phenomena.
@@ -171,8 +159,6 @@ are not independent inputs of the theory,
 but consequences of a single topological structure.
 
 It converts empirical facts into **topological constraints**.
-
----
 
 # Structural Role in the Programme
 
@@ -189,8 +175,6 @@ Together they provide:
 - mechanism (dynamics)
 - quantification (spectral)
 
----
-
 # Interpretation of the Result
 
 The central conceptual outcome is:
@@ -203,8 +187,6 @@ Instead:
 
 👉 all three arise from admissible topology under projection
 
----
-
 # Outcome
 
 The paper does **not** resolve all open problems.
@@ -214,8 +196,6 @@ What it does establish is:
 - a complete classification of admissible topological invariants (canonical model)
 - a structural explanation for key empirical facts
 - a clear separation between established results and open questions
-
----
 
 # Residual Open Problems
 
@@ -230,8 +210,6 @@ What it does establish is:
 
 4. **Topological–spectral interface**  
    Understand how admissible invariants map onto spectral hierarchy
-
----
 
 # Repository Structure
 
