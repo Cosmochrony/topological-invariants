@@ -1,7 +1,7 @@
 This repository contains the source of the **Topological Invariants** Cosmochrony paper  
-[*Topological Invariants of Admissible Configurations:
+*Topological Invariants of Admissible Configurations:
 Charge Quantisation, Absence of Magnetic Monopoles,
-and Projective Chirality in Cosmochrony*](out/TopologicalInvariants.pdf).
+and Projective Chirality in Cosmochrony*.
 
 This work establishes the **topological layer** of the Cosmochrony framework,
 complementary to the dynamical and spectral analyses developed in previous papers.
