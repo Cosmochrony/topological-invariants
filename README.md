@@ -52,7 +52,8 @@ This winding number is identified with electric charge.
 
 Unlike the Dirac mechanism, charge quantisation here:
 - does **not require magnetic monopoles**
-- follows directly from the topology of the fibre
+- follows from the topology of the fibre, on the supplied identification of the fibre and of its phase
+  with electric charge
 
 ## 2. The open monopole question
 
