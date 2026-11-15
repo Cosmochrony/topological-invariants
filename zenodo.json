@@ -3,5 +3,6 @@
   "web_url": "https://cosmochrony.org/science/gauge-structure/topological-invariants/",
   "main_tex": "tex/TopologicalInvariants.tex",
   "zenodo_id": 19282962,
-  "doi": "10.5281/zenodo.19282962"
+  "doi": "10.5281/zenodo.19282962",
+  "notes": "Version 1.1 corrects the monopole chain. The capacity axiom bounds a discrete per-node relaxation rate and bounds no continuum field; the fibre-phase gradient bound, previously attributed to a companion paper that does not contain it, is stated as a hypothesis. The Hopf base is homogeneous, so the polar domain is a choice and not a consequence of that bound. Charge quantisation and pi_2 = 0 on the chosen domain are kept; the exclusion of magnetic monopoles is not derived, and their absence is stated as open. The title is changed accordingly, the BornInfeld bibliography title is corrected, and PDF title and author metadata are set."
 }
