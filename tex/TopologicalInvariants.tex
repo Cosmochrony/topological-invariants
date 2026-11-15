@@ -111,7 +111,7 @@ under the non-injective projection~$\Pi$
 (Section~\ref{sec:chirality}).
       \end{enumerate}
 
-      These three results are unified by a single structural principle:
+      Results~(1) and~(3) are read under a single structural principle:
       the physics of the effective description is governed by the type of
       topological invariants that the projection renders admissible, and
       by the orientation it selects among them.
@@ -185,8 +185,10 @@ under the non-injective projection~$\Pi$
         (\mathrm{H}_\theta)\qquad
         |\nabla \theta| \leq \Lambda \quad \text{for some finite } \Lambda > 0,
       \end{equation}
-      where $\theta \in [0, 2\pi)$ is the $U(1)$ fiber coordinate.
+      where $\theta \in [0, 2\pi)$ is the $U(1)$ fiber coordinate, read in a chosen local
+      trivialisation (the Hopf bundle admits no global one, so the bound depends on that choice).
       The relation of $\Lambda$ to $c_{\mathrm{BI}}$ is not derived.
+      Proposition~\ref{prop:homotopy} below does not use~\eqref{eq:fluxproj}.
 
       \begin{definition}[Admissible configuration space]
         \label{def:Cadm}
@@ -287,17 +289,19 @@ under the non-injective projection~$\Pi$
         \label{eq:pi2S2}
         \pi_2(S^2) \cong \mathbb{Z}.
       \end{equation}
-      A non-trivial element of $\pi_2(S^2)$ would correspond, in the
-      gauge-theoretic language, to a Dirac magnetic
-      monopole~\cite{Dirac1931}:
-      a point-like source of magnetic flux classified by an integer
-      topological charge.
+      In gauge-theoretic language, a Dirac magnetic
+      monopole~\cite{Dirac1931} is a point-like source of magnetic flux
+      classified by the $U(1)$ bundle over a sphere surrounding the source
+      in the emergent space, an integer topological charge.
       In non-abelian gauge theories, the 't~Hooft--Polyakov
       construction~\cite{tHooft1974,Polyakov1974} generalises this to
       solitonic monopole solutions classified by $\pi_2(G/H)$.
 
-      If the full $S^2$ were the admissible base, magnetic monopoles would
-      be topologically admissible.
+      The base~$S^2$ considered here is the base of the internal Hopf
+      fibration of the projection fiber; whether its $\pi_2$ classifies
+      magnetic defects of the projected description is not derived
+      (Remark~\ref{cor:nomonopole}), so neither the admission nor the
+      exclusion of monopoles follows from it.
 
     \subsection{A chosen domain of the base}
 
@@ -308,9 +312,10 @@ under the non-injective projection~$\Pi$
       circle, and the left action of $\mathrm{SU}(2) \cong S^3$ commutes with
       the fiber action and induces a transitive action on~$S^2$.
       No point of the base is distinguished and no fiber degenerates.
-      A divergence of the phase coordinate at a point of~$S^2$ is a property
-      of a chosen local section, whose singular point can be moved by a gauge
-      transformation, not a property of the bundle.
+      Because the bundle is non-trivial, every section of it is singular
+      somewhere, but the location of the singularity is a property of the
+      chosen section, which a gauge transformation can move, not of the
+      bundle.
 
       We therefore consider, as a choice and not as a consequence
       of~\eqref{eq:fluxproj}, the canonical admissible model obtained by
@@ -361,7 +366,7 @@ under the non-injective projection~$\Pi$
         This problem is open.
       \end{remark}
 
-  \section{Absence of Magnetic Monopoles}
+  \section{The Magnetic Monopole Question}
     \label{sec:monopoles}
 
     \subsection{What the topology does not give}
@@ -500,7 +505,7 @@ under the non-injective projection~$\Pi$
   \section{Unified Topological Picture}
   \label{sec:unified}
 
-  The three results of this paper are unified by a single principle:
+  Charge quantisation and parity violation are read under a single principle:
   the physics of the effective description is determined by the
   topological invariants that the admissibility constraint renders
   available, and by the orientation that the projection selects.
@@ -546,7 +551,7 @@ under the non-injective projection~$\Pi$
       Result & Status & Reference \\
       \midrule
       $\pi_1(S^1) \cong \mathbb{Z}$ (charge quantisation) &
-      Proved (canonical model) &
+      Proved (supplied fiber identification) &
       Prop.~\ref{prop:charge} \\
       $\pi_2(S^2_{\mathrm{adm}}) = 0$ (chosen domain) &
       Proved &
@@ -589,8 +594,8 @@ under the non-injective projection~$\Pi$
   violation, arising from the orientation dependence of admissibility
   under non-injective projection.
 
-  These three results are unified by a single structural principle:
-  the effective physics is governed by the admissible homotopy
+  Charge quantisation and parity violation are read under a single
+  structural principle: the effective physics is governed by the admissible homotopy
   classes of the projected fiber and the orientation selected by the
   projection.
 

@@ -6,7 +6,7 @@ and Projective Chirality in Cosmochrony*.
 This work establishes the **topological layer** of the Cosmochrony framework,
 complementary to the dynamical and spectral analyses developed in previous papers.
 
-While earlier works derived:
+While earlier works introduced:
 - the emergence of charge from non-injective projection
 - the capacity axiom [A-cap], a bound on the discrete per-node relaxation rate
 - the spectral admissibility hierarchy
@@ -62,8 +62,9 @@ $$
 \pi_2(S^2) \cong \mathbb{Z}
 $$
 
-supports Dirac monopoles and their non-abelian generalisations
-('t Hooft–Polyakov, classified by $\pi_2(G/H)$).
+but this $S^2$ is the base of the internal Hopf fibration of the projection fibre, and whether its
+$\pi_2$ classifies magnetic defects is not derived; Dirac monopoles are classified by $U(1)$ bundles
+over a sphere surrounding the source in the emergent space.
 
 The capacity axiom bounds a per-node relaxation rate; it bounds no continuum field strength, and no
 bound on the fibre-phase gradient is derived from it, so such a bound is used only as a hypothesis.
