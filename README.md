@@ -1,6 +1,6 @@
 This repository contains the source of the **Topological Invariants** Cosmochrony paper  
 *Topological Invariants of Admissible Configurations:
-Charge Quantisation, Absence of Magnetic Monopoles,
+Charge Quantisation, the Open Monopole Question,
 and Projective Chirality in Cosmochrony*.
 
 This work establishes the **topological layer** of the Cosmochrony framework,
@@ -8,7 +8,7 @@ complementary to the dynamical and spectral analyses developed in previous paper
 
 While earlier works derived:
 - the emergence of charge from non-injective projection
-- the bounded-flux constraint and its dynamical consequences
+- the capacity axiom [A-cap], a bound on the discrete per-node relaxation rate
 - the spectral admissibility hierarchy
 
 they left open a fundamental question:
@@ -20,25 +20,25 @@ The present work answers that question.
 
 # Core Result
 
-The paper establishes three unified structural results:
+The paper establishes two structural results and records one open question:
 
 - **Charge quantisation** arises from  
   $\pi_1(S^1) \cong \mathbb{Z}$
 
-- **Magnetic monopoles are excluded** on the canonical admissible model via  
-  $\pi_2 = 0$
+- **$\pi_2 = 0$ on a chosen domain** of the Hopf base, with two disjoint discs removed;
+  this does **not** exclude magnetic monopoles, whose absence remains open
 
 - **Parity violation** arises from a structural mechanism of  
   **projective chirality**
 
-These are not independent phenomena, but consequences of a single principle:
+Charge and parity violation are read as consequences of a single principle:
 
 > admissibility under non-injective projection determines both
 > the available topological invariants and their orientation.
 
 # Main Structural Results
 
-The paper proves three central points.
+The paper examines three points; their status is stated in each.
 
 ## 1. Charge as a π₁ invariant
 
@@ -54,9 +54,9 @@ Unlike the Dirac mechanism, charge quantisation here:
 - does **not require magnetic monopoles**
 - follows directly from the topology of the fibre
 
-## 2. Topological exclusion of monopoles
+## 2. The open monopole question
 
-In the unconstrained case:
+On the full Hopf base:
 
 $$
 \pi_2(S^2) \cong \mathbb{Z}
@@ -65,22 +65,23 @@ $$
 supports Dirac monopoles and their non-abelian generalisations
 ('t Hooft–Polyakov, classified by $\pi_2(G/H)$).
 
-Under the bounded-flux constraint, the admissible base becomes:
+The capacity axiom bounds a per-node relaxation rate; it bounds no continuum field strength, and no
+bound on the fibre-phase gradient is derived from it, so such a bound is used only as a hypothesis.
+Neither selects a region of the base: the Hopf fibration is a principal $U(1)$ bundle with a
+homogeneous base, so no point of $S^2$ is distinguished and no fibre degenerates.
+On a **chosen** domain with two disjoint discs removed,
 
 $$
-S^2_{\mathrm{adm}} \simeq S^1 \times (0,1)
+S^2_{\mathrm{adm}} \simeq S^1 \times (0,1),
+\qquad
+\pi_2(S^2_{\mathrm{adm}}) = 0 .
 $$
 
-which implies:
-
-$$
-\pi_2(S^2_{\mathrm{adm}}) = 0
-$$
-
-Thus:
-
-- isolated magnetic monopoles are **topologically excluded**
-- their empirical absence is explained structurally
+This computation does not exclude magnetic monopoles. An exclusion would need two steps that are not
+derived: that the admissible base is such a domain, obtained from the projection structure rather
+than chosen, and that $\pi_2$ of this internal base classifies the magnetic defects of the projected
+description. Assuming both would build the exclusion into the assumptions. The absence of magnetic
+monopoles is therefore open.
 
 ## 3. Projective chirality and parity violation
 
@@ -98,17 +99,8 @@ This defines **projective chirality**, which:
 
 # Topological vs Standard Framework
 
-The paper establishes a sharp contrast with the standard paradigm:
-
-- **Standard gauge theory**:
-    - monopoles are topologically admissible
-    - their absence requires a dynamical explanation
-
-- **Cosmochrony**:
-    - monopoles are topologically excluded
-    - their absence follows from admissibility constraints
-
-This inversion is central to the result.
+In standard gauge theory, monopoles are topologically admissible and their absence requires a
+dynamical explanation. The present paper does not supply a topological alternative.
 
 # Observable Hierarchy
 
@@ -133,13 +125,15 @@ These layers are complementary:
 
 What is rigorously established:
 
-- $\pi_1(S^1) \cong \mathbb{Z}$ → charge quantisation (canonical model)
-- $\pi_2 = 0$ → absence of monopoles (canonical model)
+- $\pi_1(S^1) \cong \mathbb{Z}$ → charge quantisation (on the supplied fibre identification)
+- $\pi_2 = 0$ on the chosen domain of the base, without a derived physical consequence
 - projective chirality as a structural mechanism
 
 What remains open:
 
-- extension of $\pi_2(C_{\mathrm{eff}}) = 0$ to the full configuration space
+- absence of magnetic monopoles
+- derivation of the admissible base from the projection structure, and extension of
+  $\pi_2(C_{\mathrm{eff}}) = 0$ to the full configuration space
 - derivation of maximal chirality (strict V−A)
 - identification of weak-interaction sectors within Weil blocks
 
@@ -152,20 +146,17 @@ This work is a **structural clarification** of fundamental phenomena.
 It shows that:
 
 - charge
-- absence of monopoles
 - parity violation
 
-are not independent inputs of the theory,
-but consequences of a single topological structure.
-
-It converts empirical facts into **topological constraints**.
+are read as consequences of a single topological structure,
+and it delimits what topology alone does not give for magnetic monopoles.
 
 # Structural Role in the Programme
 
 This paper complements the existing Cosmochrony programme:
 
 - White paper: emergence of projection and gauge structure
-- Dynamical papers: bounded flux and relaxation
+- Dynamical papers: bounded relational capacity and relaxation
 - Spectral programme (O-series): admissibility and hierarchy
 - **Topological invariants (this work)**: classification of admissible sectors
 
@@ -179,13 +170,12 @@ Together they provide:
 
 The central conceptual outcome is:
 
-- the absence of monopoles is **not contingent**
 - parity violation is **not an external symmetry breaking**
 - charge quantisation is **not derived from monopoles**
 
 Instead:
 
-👉 all three arise from admissible topology under projection
+👉 both arise from admissible topology under projection; the monopole question stays open
 
 # Outcome
 
@@ -193,14 +183,15 @@ The paper does **not** resolve all open problems.
 
 What it does establish is:
 
-- a complete classification of admissible topological invariants (canonical model)
-- a structural explanation for key empirical facts
+- a classification of admissible topological invariants on the canonical model
+- a structural reading of charge quantisation and parity violation
 - a clear separation between established results and open questions
 
 # Residual Open Problems
 
-1. **Global extension of π₂ = 0**  
-   Prove that the triviality of π₂ holds on the full configuration space
+1. **Admissible base and monopoles**  
+   Derive the admissible base from the projection structure, and determine whether $\pi_2$ of the
+   Hopf base bears on magnetic defects at all
 
 2. **Derivation of maximal chirality**  
    Show that admissibility enforces strict V−A selection
@@ -224,8 +215,9 @@ paper/
 If you reference this work, please cite:
 
 J. Beau, Topological Invariants of Admissible Configurations:
-Charge Quantisation, Absence of Magnetic Monopoles,
+Charge Quantisation, the Open Monopole Question,
 and Projective Chirality in Cosmochrony, Zenodo, 2026.
+[doi:10.5281/zenodo.19282962](https://doi.org/10.5281/zenodo.19282962)
 
 # Acknowledgements
 
