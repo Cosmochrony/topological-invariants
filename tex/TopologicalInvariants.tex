@@ -6,6 +6,8 @@
 \usepackage{geometry}
 \geometry{margin=2.5cm}
 \usepackage{hyperref}
+\hypersetup{pdftitle={Topological Invariants of Admissible Configurations: Charge Quantisation, the Open
+  Monopole Question, and Projective Chirality in Cosmochrony}, pdfauthor={J\'er\^ome Beau}}
 \usepackage{booktabs}
 \usepackage{enumitem}
 \usepackage{amsfonts}
@@ -24,7 +26,7 @@
 \newcommand{\Cadm}{\mathcal{C}_{\mathrm{adm}}}
 
 \title{Topological Invariants of Admissible Configurations:\\
-Charge Quantisation, Absence of Magnetic Monopoles,\\
+Charge Quantisation, the Open Monopole Question,\\
 and Projective Chirality in Cosmochrony}
 \author{J\'er\^ome Beau\\
 \small Independent Researcher, France; jerome.beau@cosmochrony.org}
@@ -40,11 +42,14 @@ and Projective Chirality in Cosmochrony}
     $S^1 \hookrightarrow S^3 \to S^2$, whose $U(1)$ fiber sector supports
     electric charge as a winding number associated with
     $\pi_1(S^1) \cong \mathbb{Z}$.
-    On a canonical admissible configuration model, the bounded-flux constraint
-    removes polar regions from the base~$S^2$, reducing the admissible
-    base to a topological annulus with $\pi_2 = 0$.
-    This triviality excludes isolated magnetic monopoles as admissible
-    topological excitations.
+    The capacity axiom of the framework bounds a discrete per-node relaxation
+    rate; no bound on the gradient of the fiber phase is derived from it, and
+    such a bound is stated here only as a hypothesis.
+    On a chosen domain of the base~$S^2$, obtained by removing two disjoint
+    discs, the base is a topological annulus with $\pi_2 = 0$.
+    This computation does not exclude magnetic monopoles: neither the choice of
+    domain nor the reading of $\pi_2$ of this internal base as a classification
+    of magnetic defects is derived, and the absence of monopoles remains open.
     We further argue that parity violation arises from projective chirality:
     a structural orientation dependence of admissibility under non-injective
     projection, which selects one handedness of winding invariants over its
@@ -96,10 +101,10 @@ and Projective Chirality in Cosmochrony}
 \item Electric charge corresponds to a $\pi_1$ invariant of the $U(1)$
 fiber, with $\pi_1(S^1) \cong \mathbb{Z}$
 (Section~\ref{sec:charge}).
-\item On the canonical admissible model, the second homotopy group of
-the admissible base is trivial, $\pi_2(\Cadm) = 0$, excluding
-isolated magnetic monopoles
-(Section~\ref{sec:monopoles}).
+\item On a chosen domain of the Hopf base, the second homotopy group is
+trivial, $\pi_2(S^2_{\mathrm{adm}}) = 0$; no exclusion of magnetic
+monopoles is derived from it
+(Sections~\ref{sec:canonical} and~\ref{sec:monopoles}).
 \item Parity violation can be interpreted as a manifestation of
 projective chirality: an orientation dependence of admissibility
 under the non-injective projection~$\Pi$
@@ -113,10 +118,11 @@ under the non-injective projection~$\Pi$
 
     \subsection{Scope and limitations}
 
-      Results~(1) and~(2) are established on a canonical admissible
-      configuration model (Section~\ref{sec:canonical}).
-      Their extension to the full effective configuration space~$\Ceff$
-      is an open problem.
+      Result~(1) rests on the supplied identification of the projection
+      fiber; result~(2) is a topological computation on a chosen domain of
+      the base (Section~\ref{sec:canonical}).
+      The physical reading of~(2) and its extension to the full effective
+      configuration space~$\Ceff$ are open problems.
       Result~(3) is established at the framework level as a structural
       mechanism; its identification with the specific $V{-}A$ structure of the
       weak interaction remains qualitative.
@@ -157,33 +163,39 @@ under the non-injective projection~$\Pi$
       in~\cite{Cosmochrony} (\S5.2) and is not re-derived in the present
       paper; we use it as structural input.
 
-    \subsection{Bounded-flux constraint and admissibility}
+    \subsection{Capacity axiom and admissibility}
 
-      The bounded-flux constraint~\cite{Cosmochrony,Beau2026c}
+      The capacity axiom [A-cap] of~\cite{Beau2026c} is an explicit hypothesis
+      stated at the discrete relational level:
       \begin{equation}
         \label{eq:flux}
-        |\partial_t \chi_v| \leq c_{\mathrm{BI}}
+        |\partial_\tau \chi_v| \leq c_{\mathrm{BI}}
         \qquad \text{for every node } v \in \mathcal{G}(n),
       \end{equation}
-      imposes a maximal relaxation rate on every relational variable.
-      At the level of the projected description, this translates into a
-      constraint on the admissible gradient of the fiber
-      phase~\cite{Beau2026e}:
+      where $\tau$ is the ordering parameter of the relaxation process.
+      It bounds a per-node relaxation rate.
+      It does not assert that any continuum field strength, constitutive
+      response or energy flux is bounded, and which continuum quantity, if
+      any, inherits the bound is an open problem~\cite{Beau2026c}.
+      In particular, no bound on the gradient of the fiber phase follows from
+      it.
+      Such a bound is therefore used here only as a hypothesis:
       \begin{equation}
         \label{eq:fluxproj}
-        |\nabla \theta| \leq \frac{c_{\mathrm{BI}}}{\hbar_\chi},
+        (\mathrm{H}_\theta)\qquad
+        |\nabla \theta| \leq \Lambda \quad \text{for some finite } \Lambda > 0,
       \end{equation}
-      where $\theta \in [0, 2\pi)$ is the $U(1)$ fiber coordinate
-      and $\hbar_\chi$ is the effective action scale.
+      where $\theta \in [0, 2\pi)$ is the $U(1)$ fiber coordinate.
+      The relation of $\Lambda$ to $c_{\mathrm{BI}}$ is not derived.
 
       \begin{definition}[Admissible configuration space]
         \label{def:Cadm}
         The admissible configuration space~$\Cadm$ is the subspace of
-        fiber configurations satisfying the bounded-flux
-        constraint~\eqref{eq:fluxproj} at every point.
+        fiber configurations satisfying the phase-gradient
+        hypothesis~\eqref{eq:fluxproj} at every point.
       \end{definition}
 
-      The constraint~\eqref{eq:fluxproj} excludes configurations with
+      Hypothesis~\eqref{eq:fluxproj} excludes configurations with
       arbitrarily large phase gradients.
       Its topological consequence is the subject of the next sections.
 
@@ -236,8 +248,8 @@ under the non-injective projection~$\Pi$
         consequence of $\pi_1(S^1) \cong \mathbb{Z}$.
         The winding number~$w$ of a fiber configuration is a topological
         invariant that cannot change under continuous deformation.
-        The admissibility constraint~\eqref{eq:fluxproj} removes
-        configurations exceeding the flux bound but does not introduce
+        The phase-gradient hypothesis~\eqref{eq:fluxproj} removes
+        configurations exceeding the bound but does not introduce
         identifications that would contract the fiber.
         Therefore the fundamental group of the fiber sector
         remains that of $\mathrm{U}(1)$.
@@ -287,17 +299,23 @@ under the non-injective projection~$\Pi$
       If the full $S^2$ were the admissible base, magnetic monopoles would
       be topologically admissible.
 
-    \subsection{Bounded-flux reduction of the base}
+    \subsection{A chosen domain of the base}
 
-      The bounded-flux constraint~\eqref{eq:fluxproj} restricts the set of
-      admissible fiber configurations.
-      At the level of the Hopf base~$S^2$, the constraint excludes
-      configurations in which the fiber phase varies too rapidly.
+      Hypothesis~\eqref{eq:fluxproj} restricts the set of admissible fiber
+      configurations; it does not by itself single out any region of the
+      Hopf base~$S^2$.
+      The Hopf fibration is a principal $U(1)$ bundle: every fiber is a
+      circle, and the left action of $\mathrm{SU}(2) \cong S^3$ commutes with
+      the fiber action and induces a transitive action on~$S^2$.
+      No point of the base is distinguished and no fiber degenerates.
+      A divergence of the phase coordinate at a point of~$S^2$ is a property
+      of a chosen local section, whose singular point can be moved by a gauge
+      transformation, not a property of the bundle.
 
-      Consider the canonical admissible model in which the constraint
-      removes a neighbourhood of each pole of~$S^2$
-      (the north and south poles being the points where the fiber
-      degenerates, corresponding to maximal flux concentration).
+      We therefore consider, as a choice and not as a consequence
+      of~\eqref{eq:fluxproj}, the canonical admissible model obtained by
+      removing two disjoint open discs, labelled by the north and south poles
+      of a chosen axis.
       The admissible base is then
       \begin{equation}
         \label{eq:annulus}
@@ -332,42 +350,39 @@ under the non-injective projection~$\Pi$
 
       \begin{remark}[Scope of Proposition~\ref{prop:homotopy}]
         \label{rem:scope}
-        The result is established for the canonical model in which the
-        admissibility constraint removes exactly two polar discs.
+        The result is a statement about the chosen domain in which exactly
+        two disjoint discs are removed.
         Its extension to the full admissible configuration space~$\Ceff$
-        requires showing that the bounded-flux constraint generically reduces
-        the base to a space with trivial~$\pi_2$.
-        This is a well-posed topological problem but remains open.
-        The expectation that the result extends is motivated by the fact
-        that the bounded-flux constraint removes precisely the gradient
-        singularities required to support non-trivial $\pi_2$ classes:
-        any admissible base must lack the polar regions where the fiber
-        degenerates, and it is this degeneration that generates
-        $\pi_2(S^2) \cong \mathbb{Z}$.
+        requires deriving, from the projection structure, that the admissible
+        base is a domain with trivial~$\pi_2$.
+        Hypothesis~\eqref{eq:fluxproj} does not supply this: it constrains
+        fiber configurations, and the Hopf base has no distinguished points
+        from which a region could be removed.
+        This problem is open.
       \end{remark}
 
   \section{Absence of Magnetic Monopoles}
     \label{sec:monopoles}
 
-    \subsection{Topological exclusion}
+    \subsection{What the topology does not give}
 
-      \begin{corollary}[No isolated magnetic charge]
+      \begin{remark}[No derived exclusion]
         \label{cor:nomonopole}
-        On the canonical admissible model, no isolated magnetic monopole is
-        a topologically admissible excitation.
-      \end{corollary}
-
-      \begin{proof}
-        An isolated magnetic monopole corresponds to a non-trivial class in
-        $\pi_2$ of the gauge bundle base.
-        In the present framework, the configuration space already
-        incorporates the gauge structure through the projection fiber,
-        so that $\pi_2$ of $\Ceff$ directly classifies admissible magnetic
-        defects.
-        By Proposition~\ref{prop:homotopy},
-        $\pi_2(S^2_{\mathrm{adm}}) = 0$,
-        so no such class exists.
-      \end{proof}
+        Proposition~\ref{prop:homotopy} gives $\pi_2(S^2_{\mathrm{adm}}) = 0$
+        for the chosen domain.
+        It does not exclude magnetic monopoles.
+        An exclusion would require two steps that are not derived:
+        (i)~that the admissible base is a domain with trivial~$\pi_2$,
+        derived from the projection structure rather than chosen; and
+        (ii)~that $\pi_2$ of this base, which is the base of the internal
+        Hopf fibration of the projection fiber and not a sphere surrounding a
+        source in the emergent space, classifies the magnetic defects of the
+        projected description.
+        Assuming both would build the exclusion into the assumptions rather
+        than derive it.
+        The absence of magnetic monopoles is therefore an open question in
+        this framework.
+      \end{remark}
 
     \subsection{Physical interpretation}
 
@@ -382,29 +397,23 @@ under the non-injective projection~$\Pi$
       explained dynamically (e.g.\ by cosmological dilution in inflationary
       models).
 
-      In Cosmochrony, the situation is reversed:
-      the absence of monopoles is not a dynamical accident but a
-      \emph{topological consequence of admissibility}.
-      The bounded-flux constraint removes the topological support for
-      monopole-type excitations.
+      The present paper does not supply a topological alternative to that
+      dynamical explanation (Remark~\ref{cor:nomonopole}).
 
       \begin{remark}[Precise status]
         \label{rem:monopolestatus}
-        In Cosmochrony, the absence of magnetic monopoles is not postulated.
-        It is already realised on the canonical admissible configuration model
-        by the triviality of~$\pi_2$.
-        The remaining open problem is to lift this result from the canonical
-        admissible base to the full effective configuration space~$\Ceff$.
+        The triviality of~$\pi_2$ is proved for the chosen domain of the base.
+        Its reading as an absence of magnetic monopoles is open, and requires
+        the two steps of Remark~\ref{cor:nomonopole}.
       \end{remark}
 
     \subsection{Compatibility with Dirac strings}
 
-      The triviality of $\pi_2$ on the admissible base does not affect the
-      Dirac string construction for \emph{non}-monopolar configurations.
-      Magnetic flux lines (corresponding to $B = \nabla \times A_T$) remain
-      admissible as long as they form closed loops.
-      Only \emph{isolated} magnetic sources, which would require non-trivial
-      $\pi_2$ classes, are excluded.
+      Closed magnetic flux lines (corresponding to $B = \nabla \times A_T$)
+      carry no magnetic charge.
+      They are not affected by the open question of
+      Remark~\ref{cor:nomonopole}, which concerns isolated magnetic sources
+      only.
 
   \section{Projective Chirality and Parity Violation}
     \label{sec:chirality}
@@ -505,8 +514,8 @@ under the non-injective projection~$\Pi$
       Charge quantisation &
       Winding of $U(1)$ fiber \\
       $\pi_2(S^2_{\mathrm{adm}}) = 0$ &
-      No magnetic monopoles &
-      Bounded-flux reduction of base \\
+      None derived (monopoles open) &
+      Chosen domain of base \\
       Orientation of $\pi_1$ &
       Parity violation &
       Projective chirality \\
@@ -514,9 +523,9 @@ under the non-injective projection~$\Pi$
     \end{tabular}
   \end{center}
 
-  This table makes explicit that charge, the absence of monopoles,
-  and parity violation are not three independent phenomena but three
-  aspects of the same topological structure:
+  This table makes explicit that charge quantisation and parity violation
+  are read here as two aspects of the same topological structure, while the
+  monopole row records a computation without a derived physical consequence:
   the admissible homotopy groups of the projected fiber and the
   orientation that the projection selects among their generators.
 
@@ -539,8 +548,8 @@ under the non-injective projection~$\Pi$
       $\pi_1(S^1) \cong \mathbb{Z}$ (charge quantisation) &
       Proved (canonical model) &
       Prop.~\ref{prop:charge} \\
-      $\pi_2(S^2_{\mathrm{adm}}) = 0$ (no monopoles) &
-      Proved (canonical model) &
+      $\pi_2(S^2_{\mathrm{adm}}) = 0$ (chosen domain) &
+      Proved &
       Prop.~\ref{prop:homotopy} \\
       Projective chirality ($\Gamma(Q) \neq \Gamma(-Q)$) &
       Established (framework) &
@@ -551,6 +560,9 @@ under the non-injective projection~$\Pi$
       $\pi_2(\Ceff) = 0$ in general &
       Open &
       Remark~\ref{rem:scope} \\
+      Absence of magnetic monopoles &
+      Open &
+      Remark~\ref{cor:nomonopole} \\
       Maximal chirality ($V{-}A$) &
       Open &
       Remark~\ref{rem:VA} \\
@@ -569,9 +581,10 @@ under the non-injective projection~$\Pi$
 
   Electric charge arises from $\pi_1$ invariants of the $U(1)$ Hopf
   fiber, with quantisation following from $\pi_1(S^1) \cong \mathbb{Z}$.
-  The bounded-flux constraint reduces the admissible Hopf base from
-  $S^2$ to a topological annulus with $\pi_2 = 0$, excluding isolated
-  magnetic monopoles as admissible topological excitations.
+  On a chosen domain of the Hopf base, obtained by removing two disjoint
+  discs, the base is a topological annulus with $\pi_2 = 0$; this
+  computation does not exclude magnetic monopoles, whose absence remains
+  open.
   Projective chirality provides a structural interpretation of parity
   violation, arising from the orientation dependence of admissibility
   under non-injective projection.
@@ -582,8 +595,9 @@ under the non-injective projection~$\Pi$
   projection.
 
   The open problems are well-posed:
-  (i)~extending the triviality of $\pi_2$ from the canonical model to
-  the full $\Ceff$;
+  (i)~deriving the admissible base from the projection structure, and
+  determining whether $\pi_2$ of the Hopf base bears on magnetic defects at
+  all;
   (ii)~deriving the maximal ($V{-}A$) chirality from the spectral
   admissibility hierarchy;
   (iii)~identifying the weak-interaction sectors within the Weil-block
