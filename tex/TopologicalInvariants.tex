@@ -231,20 +231,33 @@ under the non-injective projection~$\Pi$
           For maps into $\Pi \cong S^3$ there is no such invariant:
           $\pi_1(S^3) = 0$, so every loop is contractible.
           A loop that winds $w$ times around one Hopf fiber is deformed to a
-          constant loop by moving its base point across the base; in the exact
-          homotopy sequence of the fibration, the boundary map
-          $\pi_2(S^2) \to \pi_1(S^1)$ is an isomorphism because
-          $\pi_2(S^3) = \pi_1(S^3) = 0$.
+          constant loop through loops that leave the fiber: their base images
+          are circles that sweep the whole base, and the disc they span in $S^3$
+          covers the base $w$ times.
+          In the exact homotopy sequence of the fibration, the boundary map
+          $\pi_2(S^2) \to \pi_1(S^1)$ is an isomorphism, since
+          $\pi_2(S^3) = \pi_1(S^3) = 0$; for a $U(1)$ bundle over $S^2$ it is
+          multiplication by the first Chern number, here $\pm 1$, and a fiber loop
+          of winding~$w$ is the image of $w$ times the generator of $\pi_2(S^2)$.
         \item \emph{A trivialising domain.}
           Over a domain $U \subset S^2$ on which the bundle is trivial (for
           instance $S^2$ minus a closed disc, or the domain of
           Section~\ref{sec:canonical}), $\pi_H^{-1}(U) \cong U \times S^1$, the
           fiber coordinate is global, and its winding is invariant under
           deformations whose base image stays in~$U$.
+          For loops whose base image is contractible in~$U$ the integer does
+          not depend on the trivialisation; over a domain that is not simply
+          connected, such as the annulus of Section~\ref{sec:canonical},
+          trivialisations differ by maps $U \to U(1)$, and the integer of a loop
+          whose base image winds around~$U$ depends on the one chosen.
       \end{enumerate}
       A bound on the fiber-phase gradient such as~\eqref{eq:fluxproj}
-      restricts the admissible maps but creates no invariant; in a fixed
-      trivialisation it bounds $|w| \le \Lambda L / 2\pi$ on a loop of length~$L$.
+      restricts the admissible maps.
+      Read in a chosen trivialisation, as in Definition~\ref{def:Cadm}, it
+      already confines configurations to the domain of that trivialisation,
+      that is, to setting~(c), and it creates no invariant beyond the one given
+      there; in a fixed trivialisation it bounds $|w| \le \Lambda L / 2\pi$ on a
+      loop of length~$L$.
       The winding statements below hold in settings~(a) and~(c).
       In setting~(c) the domain $U$ is a choice, so a chosen domain of the base
       enters result~(1) as well as result~(2).
@@ -293,9 +306,10 @@ under the non-injective projection~$\Pi$
       (Section~\ref{subsec:configurations}), whereas $q_{\mathrm{eff}}$ is a line
       integral in the emergent description.
       Equating them requires a specified relation between the two, for
-      instance a connection on a bundle over the emergent space whose holonomy
-      along~$\gamma$ is fixed by the internal winding.
-      No such relation is supplied, here or in the companion
+      instance a specified map from the internal fiber to a bundle over the
+      emergent space under which the winding fixes a gauge-invariant integer
+      there; a holonomy alone, defined modulo $2\pi$, cannot carry that integer.
+      No such relation is derived, here or in the companion
       papers~\cite{Cosmochrony,Beau2026q6a}: the gauge connection of the
       gauge-structure analysis is supplied, not derived.
       Equation~\eqref{eq:quantised} is therefore an identification that this
@@ -334,12 +348,16 @@ under the non-injective projection~$\Pi$
         orientation conventions), and its natural connection is the magnetic
         pole of lowest strength~\cite{Trautman1977}, in the global formulation
         of the monopole by a nonintegrable phase factor~\cite{WuYang1975}.
-        In this bundle the fiber winding and the class of the base are the same
-        integer: the boundary map $\pi_2(S^2) \to \pi_1(S^1)$ is an isomorphism
-        (Section~\ref{subsec:configurations}).
-        The integer of Proposition~\ref{prop:charge} is thus the integer of a
-        unit monopole over the internal base~$S^2$, not over a sphere in the
-        emergent space.
+        In this bundle the boundary map $\pi_2(S^2) \to \pi_1(S^1)$ is
+        multiplication by $c_1 = \pm 1$, hence an isomorphism
+        (Section~\ref{subsec:configurations}): a fiber loop of winding~$w$
+        bounds in $S^3$ a disc whose image covers the base $w$ times.
+        It is this unit monopole class of the internal base that makes every
+        fiber winding contractible in~$\Pi$; the winding of
+        Proposition~\ref{prop:charge} is invariant in settings~(a) and~(c),
+        where that class is out of reach.
+        The monopole in question lives over the internal base~$S^2$, not over a
+        sphere in the emergent space.
         Whether charge in the emergent description is quantised, and how that
         would relate to monopoles there, is not decided by this paper
         (Section~\ref{subsec:chargewinding} and
@@ -349,10 +367,10 @@ under the non-injective projection~$\Pi$
     \subsection{Sign of charge and conjugation}
 
       The winding number~$w$ carries a sign.
-      Configurations with $w > 0$ and $w < 0$ correspond to opposite
-      chiralities of the transverse torsion pattern.
       Under the identification~\eqref{eq:quantised}, which is not derived,
-      charge conjugation corresponds to the reversal $w \to -w$,
+      configurations with $w > 0$ and $w < 0$ would correspond to opposite
+      chiralities of the transverse torsion pattern, and
+      charge conjugation to the reversal $w \to -w$,
       i.e.\ to a relational conjugation of the fiber
       configuration~\cite{Cosmochrony}.
 

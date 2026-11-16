@@ -55,10 +55,11 @@ fixed fibre, or over a trivialising domain of the base (where the fibre coordina
 into the whole fibre $\Pi \cong S^3$, since $\pi_1(S^3) = 0$.
 
 The Hopf fibration is the $U(1)$ bundle over $S^2$ with first Chern number of absolute value one: the bundle of
-the unit Dirac monopole over the internal base (Trautman 1977; Wu and Yang 1975). In it the fibre winding and the
-class of the base are the same integer, since $\pi_2(S^2) \to \pi_1(S^1)$ is an isomorphism. The winding is
-therefore not independent of the monopole structure; it is the integer of a monopole over the internal base, not
-over a sphere in the emergent space.
+the unit Dirac monopole over the internal base (Trautman 1977). In it the boundary map
+$\pi_2(S^2) \to \pi_1(S^1)$ is multiplication by $c_1 = \pm 1$: a fibre loop of winding $w$ bounds in $S^3$ a disc
+whose image covers the base $w$ times, and it is this unit class that makes every fibre winding contractible in the
+whole fibre. The winding is therefore not independent of the monopole structure; the monopole in question lives over
+the internal base, not over a sphere in the emergent space.
 
 The reading of the winding as electric charge, $q_{\mathrm{eff}} = w \cdot e$, is not derived: it needs a
 specified relation between the internal fibre and an electromagnetic potential of the emergent description, which
@@ -185,7 +186,8 @@ Together they provide:
 The central conceptual outcome is:
 
 - parity violation is **not an external symmetry breaking**
-- the integer fibre winding is the integer of the unit monopole over the internal base
+- the fibre carrying the integer winding is the fibre of the unit monopole bundle over the internal base, whose class
+  makes every fibre winding contractible in the whole fibre
 
 Instead:
 
