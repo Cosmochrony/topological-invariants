@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 message: "If you cite this work, please use the metadata from this file."
-title: "Topological Invariants of Admissible Configurations: Charge Quantisation, the Open Monopole Question, and Projective Chirality in Cosmochrony"
+title: "Topological Invariants of Admissible Configurations: Fibre Winding, the Open Charge and Monopole Questions, and Projective Chirality in Cosmochrony"
 type: software
 authors:
   - family-names: "Beau"
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/topological-invariants"
 url: "https://cosmochrony.org/science/gauge-structure/topological-invariants/"
-version: "1.1"
+version: "1.2"
 doi: "10.5281/zenodo.19282962"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "Topological Invariants of Admissible Configurations: Charge Quantisation, the Open Monopole Question, and Projective Chirality in Cosmochrony"
+  title: "Topological Invariants of Admissible Configurations: Fibre Winding, the Open Charge and Monopole Questions, and Projective Chirality in Cosmochrony"
   authors:
     - family-names: "Beau"
       given-names: "Jérôme"

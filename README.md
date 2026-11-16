@@ -1,13 +1,13 @@
 This repository contains the source of the **Topological Invariants** Cosmochrony paper  
 *Topological Invariants of Admissible Configurations:
-Charge Quantisation, the Open Monopole Question,
+Fibre Winding, the Open Charge and Monopole Questions,
 and Projective Chirality in Cosmochrony*.
 
 This work establishes the **topological layer** of the Cosmochrony framework,
 complementary to the dynamical and spectral analyses developed in previous papers.
 
 While earlier works introduced:
-- the emergence of charge from non-injective projection
+- a proposed reading of charge as an invariant of non-injective projection
 - the capacity axiom [A-cap], a bound on the discrete per-node relaxation rate
 - the spectral admissibility hierarchy
 
@@ -20,10 +20,12 @@ The present work answers that question.
 
 # Core Result
 
-The paper establishes two structural results and records one open question:
+The paper establishes two topological results and records two open questions:
 
-- **Charge quantisation** arises from  
-  $\pi_1(S^1) \cong \mathbb{Z}$
+- the circle fibre carries an **integer winding**, $\pi_1(S^1) \cong \mathbb{Z}$, invariant for configurations in a
+  fixed fibre or over a trivialising domain of the base, not for configurations in the whole fibre $\Pi \cong S^3$;
+  its identification with **electric charge is not derived**, so charge quantisation in the emergent description
+  is open
 
 - **$\pi_2 = 0$ on a chosen domain** of the Hopf base, with two disjoint discs removed;
   this does **not** exclude magnetic monopoles, whose absence remains open
@@ -31,7 +33,7 @@ The paper establishes two structural results and records one open question:
 - **Parity violation** arises from a structural mechanism of  
   **projective chirality**
 
-Charge and parity violation are read as consequences of a single principle:
+The fibre winding and parity violation are read, as an interpretation, under a single principle:
 
 > admissibility under non-injective projection determines both
 > the available topological invariants and their orientation.
@@ -40,7 +42,7 @@ Charge and parity violation are read as consequences of a single principle:
 
 The paper examines three points; their status is stated in each.
 
-## 1. Charge as a π₁ invariant
+## 1. Fibre winding, and the missing link to charge
 
 The U(1) fibre of the Hopf fibration supports a winding number:
 
@@ -48,12 +50,20 @@ $$
 \pi_1(S^1) \cong \mathbb{Z}
 $$
 
-This winding number is identified with electric charge.
+Whether it is invariant depends on the configurations and deformations allowed: it is invariant for maps into a
+fixed fibre, or over a trivialising domain of the base (where the fibre coordinate is global); it is not for maps
+into the whole fibre $\Pi \cong S^3$, since $\pi_1(S^3) = 0$.
 
-Unlike the Dirac mechanism, charge quantisation here:
-- does **not require magnetic monopoles**
-- follows from the topology of the fibre, on the supplied identification of the fibre and of its phase
-  with electric charge
+The Hopf fibration is the $U(1)$ bundle over $S^2$ with first Chern number of absolute value one: the bundle of
+the unit Dirac monopole over the internal base (Trautman 1977; Wu and Yang 1975). In it the fibre winding and the
+class of the base are the same integer, since $\pi_2(S^2) \to \pi_1(S^1)$ is an isomorphism. The winding is
+therefore not independent of the monopole structure; it is the integer of a monopole over the internal base, not
+over a sphere in the emergent space.
+
+The reading of the winding as electric charge, $q_{\mathrm{eff}} = w \cdot e$, is not derived: it needs a
+specified relation between the internal fibre and an electromagnetic potential of the emergent description, which
+is not supplied (the gauge connection of the gauge-structure analysis is itself supplied). Charge quantisation in
+the emergent description is open.
 
 ## 2. The open monopole question
 
@@ -127,12 +137,14 @@ These layers are complementary:
 
 What is rigorously established:
 
-- $\pi_1(S^1) \cong \mathbb{Z}$ → charge quantisation (on the supplied fibre identification)
+- $\pi_1(S^1) \cong \mathbb{Z}$ → an integer fibre winding, in a fixed fibre or over a trivialising domain (on the
+  supplied fibre identification)
 - $\pi_2 = 0$ on the chosen domain of the base, without a derived physical consequence
 - projective chirality as a structural mechanism
 
 What remains open:
 
+- the identification of the winding with electric charge, and charge quantisation in the emergent description
 - absence of magnetic monopoles
 - derivation of the admissible base from the projection structure, and extension of
   $\pi_2(C_{\mathrm{eff}}) = 0$ to the full configuration space
@@ -147,7 +159,7 @@ This work is a **structural clarification** of fundamental phenomena.
 
 It shows that:
 
-- charge
+- the fibre winding
 - parity violation
 
 are read as consequences of a single topological structure,
@@ -173,11 +185,11 @@ Together they provide:
 The central conceptual outcome is:
 
 - parity violation is **not an external symmetry breaking**
-- charge quantisation is **not derived from monopoles**
+- the integer fibre winding is the integer of the unit monopole over the internal base
 
 Instead:
 
-👉 both arise from admissible topology under projection; the monopole question stays open
+👉 both are read from admissible topology under projection; the charge and monopole questions stay open
 
 # Outcome
 
@@ -186,22 +198,26 @@ The paper does **not** resolve all open problems.
 What it does establish is:
 
 - a classification of admissible topological invariants on the canonical model
-- a structural reading of charge quantisation and parity violation
+- a structural reading of the fibre winding and parity violation, with the link to charge stated as missing
 - a clear separation between established results and open questions
 
 # Residual Open Problems
 
-1. **Admissible base and monopoles**  
+1. **Fibre winding and emergent charge**  
+   Derive a relation between the internal fibre and an electromagnetic potential of the emergent
+   description, which the reading of the winding as electric charge requires
+
+2. **Admissible base and monopoles**  
    Derive the admissible base from the projection structure, and determine whether $\pi_2$ of the
    Hopf base bears on magnetic defects at all
 
-2. **Derivation of maximal chirality**  
+3. **Derivation of maximal chirality**  
    Show that admissibility enforces strict V−A selection
 
-3. **Spectral identification of weak sectors**  
+4. **Spectral identification of weak sectors**  
    Connect SU(2) structure to Weil-block representations
 
-4. **Topological–spectral interface**  
+5. **Topological–spectral interface**  
    Understand how admissible invariants map onto spectral hierarchy
 
 # Repository Structure
@@ -217,7 +233,7 @@ paper/
 If you reference this work, please cite:
 
 J. Beau, Topological Invariants of Admissible Configurations:
-Charge Quantisation, the Open Monopole Question,
+Fibre Winding, the Open Charge and Monopole Questions,
 and Projective Chirality in Cosmochrony, Zenodo, 2026.
 [doi:10.5281/zenodo.19282962](https://doi.org/10.5281/zenodo.19282962)
 
