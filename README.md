@@ -57,7 +57,7 @@ into the whole fibre $\Pi \cong S^3$, since $\pi_1(S^3) = 0$.
 The Hopf fibration is the $U(1)$ bundle over $S^2$ with first Chern number of absolute value one: the bundle of
 the unit Dirac monopole over the internal base (Trautman 1977). In it the boundary map
 $\pi_2(S^2) \to \pi_1(S^1)$ is multiplication by $c_1 = \pm 1$: a fibre loop of winding $w$ bounds in $S^3$ a disc
-whose image covers the base $w$ times, and it is this unit class that makes every fibre winding contractible in the
+whose image covers the base with degree $\pm w$ (the sign set by the orientation convention), and it is this unit class that makes every fibre winding contractible in the
 whole fibre. The winding is therefore not independent of the monopole structure; the monopole in question lives over
 the internal base, not over a sphere in the emergent space.
 
